@@ -6,7 +6,7 @@ const app = express()
 const httpServer = createServer(app)
 const io = new Server(httpServer)
 
-app.use(express.static("public"));
+app.use(express.static("src/public"));
 
 io.on("connection", (socket)=>{
     //socket.broadcast.emit envia para todos menos pro usuario atual

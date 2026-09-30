@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Socket.IO Chat</title>
+
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <main class="chat">
+
+        <header class="chat-header">
+            <div>
+                <h1>Chat</h1>
+                <span id="status">Conectando...</span>
+            </div>
+        </header>
+
+        <section id="messages" class="messages"></section>
+
+        <form id="messageForm" class="message-form">
+
+            <input
+                id="message"
+                type="text"
+                placeholder="Digite uma mensagem..."
+                autocomplete="off"
+            >
+
+            <button id="send" type="submit">
+                Enviar
+            </button>
+
+        </form>
+
+    </main>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/script.js"></script>
+
+</body>
+
+</html>
